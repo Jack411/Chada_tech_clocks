@@ -68,11 +68,11 @@ int main()
         second[index] = index;
     }
 
-    time_t timetoday;      				
+    time_t timetoday;      				// declaring variable to contain time
     time(&timetoday);
-    string str = asctime(localtime(&timetoday));
+    string str = asctime(localtime(&timetoday));        // string str contains the current time 
 
-    str = str.substr(11, 17);
+    str = str.substr(11, 17);  				
 
     stringToInt(str);
 
@@ -119,7 +119,7 @@ int main()
             	
         cout<<"\n\n\n\t\t**************************\t\t**************************\n";
         cout<<"\t\t*      12-Hour Clock     *\t\t*      24-Hour Clock     *\n";
-        cout<<"\t\t*      "<< ((hour_index >0 && hour_index<10 || hour_index>12 && hour_index<22 ) ? "0" : "");
+        cout<<"\t\t*      "<< ((hour_index >0 && hour_index<10 || hour_index>12 && hour_index<22 ) ? "0" : "");		 // if hour is less than 10 display 0 infront
         cout << hour_12[hour_index] << ":";
         if(hour_index>=12){
 			meridiam = "P M";
@@ -143,7 +143,7 @@ int main()
         {
             int user_input;
             system("CLS");
-            cout << "\n\n\n\t\t\t\t**************************\n";
+            cout << "\n\n\n\t\t\t\t**************************\n";    // Dispalying the user menu
             cout << "\t\t\t\t* 1-Add One Hour         *\n";
             cout << "\t\t\t\t* 2-Add One Minute       *\n";
             cout << "\t\t\t\t* 3-Add One Second       *\n";
@@ -153,7 +153,7 @@ int main()
             cin >> user_input;
             switch (user_input)
             {
-            case 1:
+            case 1: 					// Add 1 hour to current time
             {
                 if (hour_index == 23)
                     hour_index = 0;
@@ -161,7 +161,7 @@ int main()
                     hour_index++;
                 break;
             }
-            case 2:
+            case 2:					// Add 1 minute to current time
             {
                 if (min_index == 59)
                 {
@@ -176,7 +176,7 @@ int main()
                     min_index++;
                 break;
             }
-            case 3:
+            case 3:					// Add 1 second to current time
             {
                 if (sec_index == 59)
                 {
@@ -198,7 +198,7 @@ int main()
                     sec_index++;
                 break;
             }
-            case 4:
+            case 4:					// Exit the program
             {
                 Exit = true;
                 break;
