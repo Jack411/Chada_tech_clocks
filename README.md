@@ -8,8 +8,12 @@ The current program can be enhanced and optimised by using mathematical calculat
 
 Although the program was easy but extracting the required amount of data from the built in time funtion to a string was a bit challenging but it didn't took much time to implement.
 
-I learned may things while doing this project a few of them are as follows,
+I learned many things while doing this project a few of them are as follows,
+
 a. When the code of the program gets bigger, its wise to divide the project into small functions which can be called when required. It makes the code readable and easy to understand.
+
 b. Comment the code wherever possible, it also increases the readability of the project, it will make easy for everyone to understand the code.
+
 c. Using standard naming convention of the variables and functions.
+
 d. First comming up with a simple solution to a problem and optimize it later when needed.
