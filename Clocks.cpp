@@ -49,7 +49,7 @@ int main()
 {
     system("CLS");
     hour_12[0] = 12;
-    for (int index = 1; index < 24; index++)
+    for (int index = 1; index < 24; index++)      // Filling hour index 
     {
         hour_24[index] = index;
         if (index > 12)
@@ -62,13 +62,13 @@ int main()
         }
     }
 
-    for (int index = 0; index < 60; index++)
+    for (int index = 0; index < 60; index++)      // Filling minute and second index
     {
         minute[index] = index;
         second[index] = index;
     }
 
-    time_t timetoday;
+    time_t timetoday;      				
     time(&timetoday);
     string str = asctime(localtime(&timetoday));
 
